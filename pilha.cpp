@@ -46,21 +46,23 @@ int main (void)
   p.escrever();
   printf("-----------------------------------------------------------------\n");
 
-  bool y;
+  bool y = true;
   while(y)
   {
     printf("Pressione D para desempilhar e S para sair: ");
 
     std::string z;
     std::cin >> z;
-    printf(Z);
     if(z == "D")
     {
       p.desempilhar();
+      printf("-----------------------------------------------------------------\n");
+      p.escrever();
+      printf("-----------------------------------------------------------------\n");
     }
     else
     {
-      y != y;
+      y = !y;
     }
   }
 
